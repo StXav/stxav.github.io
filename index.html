@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serenity Wellness</title>
+  <meta name="description" content="Relax, rejuvenate, and restore with professional massage and body treatments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+</head>
+<body>
+  <header class="hero" role="banner">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title">Serenity Wellness</h1>
+      <p class="hero__subtitle">Relax • Rejuvenate • Restore</p>
+      <a class="btn" href="#services" aria-label="Explore services">Explore Services</a>
+    </div>
+  </header>
+
+  <nav class="topnav" aria-label="Primary">
+    <div class="container topnav__inner">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main" class="container" role="main">
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        We offer holistic wellness experiences that nurture body and mind. Our treatments blend
+        time-honored techniques with modern practices to relieve tension, improve circulation,
+        and restore balance.
+      </p>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Swedish Massage</h3>
+          <p>Gentle, flowing strokes to ease stress and promote deep relaxation.</p>
+          <ul class="details">
+            <li>60 / 90 minutes</li>
+            <li>Light to medium pressure</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Deep Tissue Massage</h3>
+          <p>Targeted work to release chronic tension and support mobility.</p>
+          <ul class="details">
+            <li>60 / 90 minutes</li>
+            <li>Firm pressure</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Body Scrub & Wrap</h3>
+          <p>Exfoliate and nourish your skin for a smooth, radiant glow.</p>
+          <ul class="details">
+            <li>45–60 minutes</li>
+            <li>Natural botanicals</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="assets/gallery-1.jpg" alt="Calming spa stones and candle" />
+        <img src="assets/gallery-2.jpg" alt="Massage therapy room with soft light" />
+        <img src="assets/gallery-3.jpg" alt="Rolled towels and eucalyptus" />
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Book an Appointment</h2>
+      <p class="muted">Prefer email or phone? Replace the placeholders below with yours.</p>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:info@serenity.example">info@serenity.example</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+4512345678">+45 12 34 56 78</a></p>
+        </div>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="card" aria-label="Booking request form">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Preferred Date</span>
+            <input type="date" name="date" />
+          </label>
+          <label>
+            <span>Service</span>
+            <select name="service">
+              <option>Swedish Massage</option>
+              <option>Deep Tissue Massage</option>
+              <option>Body Scrub & Wrap</option>
+            </select>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Any preferences or notes"></textarea>
+          </label>
+          <button type="submit" class="btn">Send Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <small>© <span id="year"></span> Serenity Wellness • All rights reserved.</small>
+      <div class="legal">
+        <a href="LICENSE">MIT License (code)</a> • <a href="CONTENT_LICENSE.md">CC BY-NC 4.0 (content)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
